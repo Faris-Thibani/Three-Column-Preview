@@ -29,20 +29,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](./screenshot.jpg)
-
-Add a screenshot of your solution. The easiest way to do this is to use Firefox to view your project, right-click the page and select "Take a Screenshot". You can choose either a full-height screenshot or a cropped one based on how long the page is. If it's very long, it might be best to crop it.
-
-Alternatively, you can use a tool like [FireShot](https://getfireshot.com/) to take the screenshot. FireShot has a free option, so you don't need to purchase it. 
-
-Then crop/optimize/edit your image however you like, add it to your project, and update the file path in the image above.
-
-**Note: Delete this note and the paragraphs above when you add your screenshot. If you prefer not to add a screenshot, feel free to remove this entire section.**
+![](/images/screenshot.png)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://your-solution-url.com)
-- Live Site URL: [Add live site URL here](https://your-live-site-url.com)
+- Solution URL: https://github.com/Faris-Thibani/Three-Column-Preview
+- Live Site URL: https://faris-thibani.github.io/Three-Column-Preview/
 
 ## My process
 
@@ -51,61 +43,65 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Semantic HTML5 markup
 - CSS custom properties
 - Flexbox
-- CSS Grid
 - Mobile-first workflow
-- [React](https://reactjs.org/) - JS library
-- [Next.js](https://nextjs.org/) - React framework
-- [Styled Components](https://styled-components.com/) - For styles
-
-**Note: These are just examples. Delete this note and replace the list above with your own choices**
 
 ### What I learned
 
-Use this section to recap over some of your major learnings while working through this project. Writing these out and providing code samples of areas you want to highlight is a great way to reinforce your own knowledge.
+I learned to use utilites to style components instead of creating containers.
 
-To see how you can add code snippets, see below:
+I also learnt to avoid the div and use semantic tags.
 
 ```html
-<h1>Some HTML code I'm proud of</h1>
+<section class="card-container bgOrange flex">
+        <img src="images/icon-sedans.svg" class="icon" alt="" aria-hidden="true">
+        <h1 class="headings">Sedans</h1>
+        <p class="paragraphs"> Choose a sedan for its affordability and excellent fuel economy. Ideal for cruising in
+          the city
+          or on your next road trip.</p>
+        <button class="btn orange">Learn More</button>
+    </section>
 ```
 ```css
-.proud-of-this-css {
-  color: papayawhip;
+.orange{
+    color:var(--brightOrange)
+}
+.cyan{
+    color:var(--darkCyan)
+}
+.darkCyan{
+    color: var(--veryDarkCyan)
+}
+.bgOrange{
+    background-color: var(--brightOrange);
+    border-radius: 1em 1em 0 0;
+}
+.bgCyan{
+    background-color: var(--darkCyan);
+}
+.bgVeryCyan{
+    background-color: var(--veryDarkCyan);
+    border-radius: 0 0 1em 1em;
 }
 ```
-```js
-const proudOfThisFunc = () => {
-  console.log('🎉')
-}
-```
-
-If you want more help with writing markdown, we'd recommend checking out [The Markdown Guide](https://www.markdownguide.org/) to learn more.
-
-**Note: Delete this note and the content within this section and replace with your own learnings.**
 
 ### Continued development
 
-Use this section to outline areas that you want to continue focusing on in future projects. These could be concepts you're still not completely comfortable with or techniques you found useful that you want to refine and perfect.
-
-**Note: Delete this note and the content within this section and replace with your own plans for continued development.**
+I would like to continue developing HTML Profeciency and gain knowledge in accessisability and testing. 
 
 ### Useful resources
 
-- [Example resource 1](https://www.example.com) - This helped me for XYZ reason. I really liked this pattern and will use it going forward.
-- [Example resource 2](https://www.example.com) - This is an amazing article which helped me finally understand XYZ. I'd recommend it to anyone still learning this concept.
-
-**Note: Delete this note and replace the list above with resources that helped you during the challenge. These could come in handy for anyone viewing your solution or for yourself when you look back on this project in the future.**
+- [Example resource 1]https://testingaccessibility.com/ - This is an amazing course for anyone interested in learning HTML accessibility & testing.
 
 ## Author
 
-- Website - [Add your name here](https://www.your-site.com)
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/yourusername)
-- Twitter - [@yourusername](https://www.twitter.com/yourusername)
+- Frontend Mentor - [@Faris-Thibani](https://www.frontendmentor.io/profile/Faris-Thibani)
 
-**Note: Delete this note and add/remove/edit lines above based on what links you'd like to share.**
+
 
 ## Acknowledgments
 
-This is where you can give a hat tip to anyone who helped you out on this project. Perhaps you worked in a team or got some inspiration from someone else's solution. This is the perfect place to give them some credit.
+Thanks for the Frontend mentor community for providing this project and a special thanks to Alex Marshal & James for providing useful insights and tips on improvig the code and fixing some CSS bugs. 
 
-**Note: Delete this note and edit this section's content as necessary. If you completed this challenge by yourself, feel free to delete this section entirely.**
+If you would like to learn more, please visit the live website and also you can find other solutions to challenges posted here on github.
+
+As always see you next time!
