@@ -1,0 +1,133 @@
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&display=swap');
+
+.attribution {
+    font-size: 11px;
+    text-align: center;
+}
+
+.attribution a {
+    color: hsl(228, 45%, 44%);
+}
+
+/* Utilities */
+
+.flex {
+    display: flex;
+}
+
+
+/* Custom Properties */
+
+:root {
+    /* Colors */
+    --brightOrange: hsl(31, 77%, 52%);
+    --darkCyan: hsl(184, 100%, 22%);
+    --veryDarkCyan: hsl(179, 100%, 13%);
+    font-size: 15px;
+    /* fonts */
+    --ffbsd: "big shoulder displady", sans-serif;
+    --ffld: "Lexend Deca", sans-serif; 
+}
+.orange{
+    color:var(--brightOrange)
+}
+.cyan{
+    color:var(--darkCyan)
+}
+.darkCyan{
+    color: var(--veryDarkCyan)
+}
+body {
+    color: white;
+}
+
+.wrapper {
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    background-color: whitesmoke;
+}
+
+.container {
+    width: 90%;
+    padding: 2em 0;
+    max-width:  450px;
+
+}
+
+.sedans {
+    background-color: var(--brightOrange);
+    border-radius: 1em 1em 0 0;
+    
+}
+.suvs{
+    background-color: var(--darkCyan);
+}
+.luxury{
+    background-color: var(--veryDarkCyan);
+    border-radius: 0 0 1em 1em;
+}
+.headings{
+    font-family: var(--ffbsd);
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.paragraphs{
+    font-family: var(--ffld);
+}
+.card-container{
+    width: 70%;
+    margin: 0 auto;
+    flex-direction: column;
+    gap: 2em;
+}
+.icon{
+    padding-top:2em;
+    padding-bottom:1em;
+}
+
+.btn:hover{
+    background-color: transparent;
+    color: white;
+    border: 1px solid white;
+    cursor: pointer;
+}
+img{
+    width: 30%;
+    margin-top: 2em;
+}
+.btn{
+    background-color:hsl(0, 0%, 95%);
+    padding: 1rem 2.5rem ;
+    border-radius: 2rem;
+    display: inline-block;
+    text-transform: capitalize;
+    margin-bottom: 2.5em;
+    width: 80%;
+
+}
+@media all and (min-width:782px){
+    .container{
+        display:flex;
+        max-width: 1200px;
+        padding-top: 0;
+        
+    }
+    .headings{
+        font-size: 3rem;
+    }
+    .paragraphs{
+        font-size: 1.5rem;
+    }
+    .btn{
+        justify-self: flex-end;
+    }
+    .sedans{
+        border-radius: 1em 0 0 1em;
+    }
+    .luxury{
+        border-radius: 0 1em 1em 0;
+    }
+}
